@@ -1,0 +1,20 @@
+- `sudo apt update`
+- 'wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg'
+- `echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list` 
+- `sudo apt update && sudo apt install terraform -y`
+- `terraform -v`
+- `sudo apt update && sudo apt dist-upgrade -y` 
+- `sudo apt install awscli` 
+- `aws configure`
+- `curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"` 
+- `curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"` 
+- `echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check`
+- `chmod +x ./kubectl` 
+- `mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin`
+- `echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc`
+- `kubectl version --short --client` 
+- `terraform init`
+- `terraform plan`
+- `terraform apply` 
+- `python3 -V`
+- 
