@@ -7,7 +7,6 @@
 - `nano eks.tf` 
 - `nano provider.tf` 
 - `nano variables.tf` 
-- `nano iam-autoscaler.tf` 
 - `terraform init` 
 - `terraform plan` 
 - `terraform apply` 
@@ -30,6 +29,7 @@
 -  `nano private-lb.yaml` 
 -  `nano public-lb.yaml` 
 -  `kubectl apply -f aws-test.yaml` 
+-  `nano iam-autoscaler.yaml` 
 -  `kubectl apply -f cluster-autoscaler.yaml` 
 -  `kubectl apply -f deployment.yaml` 
 -  `kubectl apply -f private-lb.yaml` 
