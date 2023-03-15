@@ -22,7 +22,7 @@
 - `mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin`
 - `echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc`
 - `kubectl version --short --client` 
-- `aws eks --region example_region update-kubeconfig --name cluster_name` 
+- `aws eks --region eu-west-2 update-kubeconfig --name exam` 
 - `nano aws-test.yaml` 
 - `nano deployment.yaml` 
 -  `nano cluster-autoscaler.yaml` 
