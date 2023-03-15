@@ -7,6 +7,7 @@
 - `nano eks.tf` 
 - `nano provider.tf` 
 - `nano variables.tf` 
+- `aws configure` 
 - `terraform init` 
 - `terraform plan` 
 - `terraform apply` 
