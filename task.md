@@ -29,6 +29,13 @@
 -  `nano cluster-autoscaler.yaml` 
 -  `nano private-lb.yaml` 
 -  `nano public-lb.yaml` 
+-  `kubectl apply -f aws-test.yaml` 
+-  `kubectl apply -f cluster-autoscaler.yaml` 
+-  `kubectl apply -f deployment.yaml` 
+-  `kubectl apply -f private-lb.yaml` 
+-  `kubectl apply -f public-lb.yaml` 
+-  `kubectl exec aws-cli -- aws s3api list-buckets` 
 - `kubectl get pods --kubeconfig ./.kube/config` 
 - `nano  ~/.kube/config` 
+- `kubectl get pods -n kube-system` 
 - `kubectl get svc` 
