@@ -24,8 +24,8 @@
 - `kubectl version --short --client` 
 - `aws eks --region eu-west-2 update-kubeconfig --name exam` 
 - `nano aws-test.yaml` 
-- `nano deployment.yaml` 
 -  `nano cluster-autoscaler.yaml` 
+-  `nano deployment.yaml` 
 -  `nano private-lb.yaml` 
 -  `nano public-lb.yaml` 
 -  `kubectl apply -f aws-test.yaml` 
