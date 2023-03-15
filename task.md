@@ -7,14 +7,13 @@
 - `nano eks.tf` 
 - `nano provider.tf` 
 - `nano variables.tf` 
-- `aws configure` 
-- `terraform init` 
-- `terraform plan` 
-- `terraform apply` 
 - `python3 -V`
 - `sudo apt update && sudo apt dist-upgrade -y` 
 - `sudo apt install awscli` 
 - `aws configure` 
+- `terraform init` 
+- `terraform plan` 
+- `terraform apply` 
 - `mkdir k8s && cd k8s` 
 - `curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"` 
 - `curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"` 
