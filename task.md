@@ -8,9 +8,14 @@
 - `nano provider.tf` 
 - `nano variables.tf` 
 - `nano iam-autoscaler.tf` 
+- `terraform init` 
+- `terraform plan` 
+- `terraform apply` 
+- `python3 -V`
 - `sudo apt update && sudo apt dist-upgrade -y` 
 - `sudo apt install awscli` 
-- `aws configure`
+- `aws configure` 
+- `mkdir k8s && cd k8s` 
 - `curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"` 
 - `curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"` 
 - `echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check`
@@ -18,8 +23,12 @@
 - `mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin`
 - `echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc`
 - `kubectl version --short --client` 
-- `terraform init`
-- `terraform plan`
-- `terraform apply` 
-- `python3 -V`
-- 
+- `aws eks --region example_region update-kubeconfig --name cluster_name` 
+- `nano aws-test.yaml` 
+- `nano deployment.yaml` 
+-  `nano cluster-autoscaler.yaml` 
+-  `nano private-lb.yaml` 
+-  `nano public-lb.yaml` 
+- `kubectl get pods --kubeconfig ./.kube/config` 
+- `nano  ~/.kube/config` 
+- `kubectl get svc` 
