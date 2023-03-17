@@ -32,19 +32,11 @@
 - `mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin`
 - `echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc`
 - `kubectl version --short --client` 
-- `aws eks --region eu-west-2 update-kubeconfig --name exam` 
-- `nano aws-test.yaml` 
--  `nano cluster-autoscaler.yaml` 
--  `nano deployment.yaml` 
--  `nano iam-autoscaler.yaml` 
--  `nano private-lb.yaml` 
--  `nano public-lb.yaml` 
--  `kubectl apply -f aws-test.yaml`  
--  `kubectl apply -f cluster-autoscaler.yaml` 
--  `kubectl apply -f deployment.yaml` 
--  `kubectl apply -f iam-autoscaler.yaml` 
--  `kubectl apply -f private-lb.yaml` 
--  `kubectl apply -f public-lb.yaml` 
+- `aws eks --region us-east-1 update-kubeconfig --name exam` 
+- in case of error, run: 
+- `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`, `unzip awscliv2.zip`, `rm -rf .kube`, `sudo ./aws/install --update`. 
+- `aws eks --region us-east-1 update-kubeconfig --name exam` 
+- `sudo nano .kube/config` 
 -  `kubectl exec aws-cli -- aws s3api list-buckets` 
 - `kubectl get pods --kubeconfig ./.kube/config` 
 - `nano  ~/.kube/config` 
