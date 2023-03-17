@@ -41,10 +41,16 @@
 - `kubectl apply -f voting-app.yaml` 
 - `kubectl get svc` 
 - `kubectl get pods -n kube-system` 
+- restart all instances
+- paste load balancer DNS name into browser. 
 - `mkdir voting-app && cd voting-app` 
 - `sudo nano provider.tf` 
 - `sudo nano votes.tf` 
 - `terraform init` 
 - `terraform plan` 
 - `terraform apply` 
-- 
+- `sudo nano microservice.yaml` 
+- `kubectl apply -f microservices.yaml` 
+- `kubectl get svc` 
+- restart all instances
+- paste load balancer DNS name into browser. 
