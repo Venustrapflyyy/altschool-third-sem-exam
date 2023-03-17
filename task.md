@@ -39,8 +39,10 @@
 - `kubectl get svc`
 - `sudo nano voting-app.yaml`
 - `kubectl apply -f voting-app.yaml` 
+- `kubectl get svc` 
 - `kubectl exec aws-cli -- aws s3api list-buckets` 
 - `kubectl get pods --kubeconfig ./.kube/config` 
-- `nano  ~/.kube/config` 
 - `kubectl get pods -n kube-system` 
-- `kubectl get svc` 
+- `mkdir voting-app && cd voting-app` 
+- `sudo nano provider.tf` 
+- `sudo nano host.tf` 
