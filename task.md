@@ -16,7 +16,6 @@
 - `sudo nano provider.tf`
 - `sudo nano subnets.tf`
 - `sudo nano vpc.tf`
-- `sudo nano voting-app.yaml`
 - `sudo apt update && sudo apt dist-upgrade -y` 
 - `sudo apt install awscli` 
 - `aws configure` 
@@ -36,8 +35,11 @@
 - in case of error, run: 
 - `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`, `unzip awscliv2.zip`, `rm -rf .kube`, `sudo ./aws/install --update`. 
 - `aws eks --region us-east-1 update-kubeconfig --name exam` 
-- `sudo nano .kube/config` 
--  `kubectl exec aws-cli -- aws s3api list-buckets` 
+- `sudo nano .kube/config`; change alpha to beta. 
+- `kubectl get svc`
+- `sudo nano voting-app.yaml`
+- `kubectl apply -f voting-app.yaml` 
+- `kubectl exec aws-cli -- aws s3api list-buckets` 
 - `kubectl get pods --kubeconfig ./.kube/config` 
 - `nano  ~/.kube/config` 
 - `kubectl get pods -n kube-system` 
