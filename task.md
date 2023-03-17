@@ -40,9 +40,11 @@
 - `sudo nano voting-app.yaml`
 - `kubectl apply -f voting-app.yaml` 
 - `kubectl get svc` 
-- `kubectl exec aws-cli -- aws s3api list-buckets` 
-- `kubectl get pods --kubeconfig ./.kube/config` 
 - `kubectl get pods -n kube-system` 
 - `mkdir voting-app && cd voting-app` 
 - `sudo nano provider.tf` 
-- `sudo nano host.tf` 
+- `sudo nano votes.tf` 
+- `terraform init` 
+- `terraform plan` 
+- `terraform apply` 
+- 
