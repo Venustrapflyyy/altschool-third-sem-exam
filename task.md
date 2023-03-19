@@ -1,8 +1,8 @@
 - `sudo apt update` 
-- 'wget -O- `https://apt.releases.hashicorp.com/gpg` | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg'
+- 'wget -O- `https://apt.releases.hashicorp.com/gpg` | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg' 
 - `echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list` 
-- `sudo apt update && sudo apt install terraform -y`
-- `terraform -v`
+- `sudo apt update && sudo apt install terraform -y` 
+- `terraform -v` 
 - `mkdir terraform && cd terraform` 
 - `sudo apt update && sudo apt dist-upgrade -y` 
 - `sudo apt install awscli` 
@@ -21,13 +21,8 @@
 - `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`, `unzip awscliv2.zip`, `rm -rf .kube`, `sudo ./aws/install --update`. 
 - `aws eks --region us-east-1 update-kubeconfig --name exam` 
 - `sudo nano .kube/config`; change alpha to beta. 
-- `kubectl get svc`
-- `sudo nano voting-app.yaml`
-- `kubectl apply -f voting-app.yaml` 
 - `kubectl get svc` 
 - `kubectl get pods -n kube-system` 
-- restart all instances
-- paste load balancer DNS name into browser. 
 - `mkdir voting-app && cd voting-app` 
 - `sudo nano provider.tf` 
 - `sudo nano votes.tf` 
@@ -85,5 +80,10 @@
 - `mkdir nginx-controller && cd nginx-conroller` 
 - `sudo nano providers-nginx.tf` 
 - `sudo nano helm-nginx.tf` 
+- `terraform init` 
+- `terraform plan` 
+- `terraform apply` 
+- `cd ~/terraform` 
+-  
 - restart all instances
 - paste load balancer DNS name into browser. 
