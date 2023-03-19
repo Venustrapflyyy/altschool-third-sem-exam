@@ -4,6 +4,10 @@
 - `sudo apt update && sudo apt install terraform -y`
 - `terraform -v`
 - `mkdir terraform && cd terraform` 
+- `sudo apt update && sudo apt dist-upgrade -y` 
+- `sudo apt install awscli` 
+- `aws configure` 
+- `mkdir k8s && cd k8s` 
 - `sudo nano eks.tf`
 - `sudo nano iam-oidc.tf`
 - `sudo nano iam-test.tf`
@@ -16,12 +20,10 @@
 - `sudo nano provider.tf`
 - `sudo nano subnets.tf`
 - `sudo nano vpc.tf`
-- `sudo apt update && sudo apt dist-upgrade -y` 
-- `sudo apt install awscli` 
-- `aws configure` 
 - `terraform init` 
 - `terraform plan` 
 - `terraform apply` 
+- `cd ~/terraform`
 - `kubectl version --short --client` 
 - `Client Version: v1.25.X-eks-1234567` 
 - `curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.25.6/2023-01-30/bin/linux/amd64/kubectl` 
@@ -51,6 +53,12 @@
 - `terraform apply` 
 - `sudo nano microservice.yaml` 
 - `kubectl apply -f microservices.yaml` 
+- `mkdir ingress-rule && cd ingress-rule` 
+- `sudo nano ingress-rule.tf`
+- `sudo nano provider.tf` 
+- `terraform init` 
+- `terraform plan` 
+- `terraform apply` 
 - `kubectl get svc` 
 - restart all instances
 - paste load balancer DNS name into browser. 
