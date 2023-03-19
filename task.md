@@ -7,23 +7,6 @@
 - `sudo apt update && sudo apt dist-upgrade -y` 
 - `sudo apt install awscli` 
 - `aws configure` 
-- `mkdir k8s && cd k8s` 
-- `sudo nano eks.tf`
-- `sudo nano iam-oidc.tf`
-- `sudo nano iam-test.tf`
-- `sudo nano igw.tf`
-- `sudo nano nodes.tf`
-- `sudo nano routes.tf`
-- `sudo nano iam-autoscaler.tf`
-- `sudo nano iam-test.tf`
-- `sudo nano nat.tf`
-- `sudo nano provider.tf`
-- `sudo nano subnets.tf`
-- `sudo nano vpc.tf`
-- `terraform init` 
-- `terraform plan` 
-- `terraform apply` 
-- `cd ~/terraform`
 - `kubectl version --short --client` 
 - `Client Version: v1.25.X-eks-1234567` 
 - `curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.25.6/2023-01-30/bin/linux/amd64/kubectl` 
@@ -71,10 +54,31 @@
 - `sudo nano providers-prome.tf` 
 - `terraform init` 
 - `terraform plan` 
-- `terraform apply`
+- `terraform apply` 
 - `cd ~/terraform` 
+- `mkdir voting-app && cd voting-app` 
 - `sudo nano provider.tf` 
-- 
 - `sudo nano votes.tf` 
+- `terraform init` 
+- `terraform plan` 
+- `terraform apply` 
+- `cd ~/terraform` 
+- `mkdir k8s && cd k8s` 
+- `sudo nano eks.tf`
+- `sudo nano iam-oidc.tf`
+- `sudo nano iam-test.tf`
+- `sudo nano igw.tf`
+- `sudo nano nodes.tf`
+- `sudo nano routes.tf`
+- `sudo nano iam-autoscaler.tf`
+- `sudo nano iam-test.tf`
+- `sudo nano nat.tf`
+- `sudo nano provider.tf`
+- `sudo nano subnets.tf`
+- `sudo nano vpc.tf`
+- `terraform init` 
+- `terraform plan` 
+- `terraform apply` 
+- `cd ~/terraform`
 - restart all instances
 - paste load balancer DNS name into browser. 
