@@ -76,9 +76,14 @@
 - `sudo nano provider.tf`
 - `sudo nano subnets.tf`
 - `sudo nano vpc.tf`
+- `sudo nano voting-app.yaml` 
+- `sudo nano microservice.yaml` 
 - `terraform init` 
 - `terraform plan` 
 - `terraform apply` 
-- `cd ~/terraform`
+- `cd ~/terraform` 
+- `mkdir nginx-controller && cd nginx-conroller` 
+- `sudo nano providers-nginx.tf` 
+- `sudo nano helm-nginx.tf` 
 - restart all instances
 - paste load balancer DNS name into browser. 
