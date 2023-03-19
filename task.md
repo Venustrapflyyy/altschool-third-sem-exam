@@ -51,14 +51,30 @@
 - `terraform init` 
 - `terraform plan` 
 - `terraform apply` 
-- `sudo nano microservice.yaml` 
-- `kubectl apply -f microservices.yaml` 
 - `mkdir ingress-rule && cd ingress-rule` 
 - `sudo nano ingress-rule.tf`
 - `sudo nano provider.tf` 
 - `terraform init` 
 - `terraform plan` 
 - `terraform apply` 
+- `cd ~/terraform` 
+- `mkdir microservice && cd microservice`
+- `sudo nano provider.tf` 
+- `sudo nano sock.tf` 
 - `kubectl get svc` 
+- `terraform init` 
+- `terraform plan` 
+- `terraform apply` 
+- `cd ~/terraform` 
+- `mkdir prometheus && cd prometheus` 
+- `sudo nano helm-prome.tf` 
+- `sudo nano providers-prome.tf` 
+- `terraform init` 
+- `terraform plan` 
+- `terraform apply`
+- `cd ~/terraform` 
+- `sudo nano provider.tf` 
+- 
+- `sudo nano votes.tf` 
 - restart all instances
 - paste load balancer DNS name into browser. 
